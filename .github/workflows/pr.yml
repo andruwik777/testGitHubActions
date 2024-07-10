@@ -7,4 +7,4 @@ jobs:
   validate-pr:
     runs-on: ubuntu-latest
     steps:
-    - name: pull request
+    - run: echo "Hi from PR workflow"
