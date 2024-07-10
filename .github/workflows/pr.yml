@@ -1,0 +1,10 @@
+name: PR name
+run-name: PR run-name
+on:
+  pull_request:
+
+jobs:
+  validate-pr:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "Hi from PR workflow"
