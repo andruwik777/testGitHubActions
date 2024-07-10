@@ -1,9 +1,7 @@
 name: HEAVY!!!
 run-name: ${{ github.actor }} runs HEAVY tests via GitHub Actions1 🚀
 on:
-  pull_request:
   merge_group:
-    types: [checks_requested]
 jobs:
   HEAVY_TEST_JOB:
     runs-on: ubuntu-latest
