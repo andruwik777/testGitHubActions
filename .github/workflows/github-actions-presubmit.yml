@@ -1,5 +1,5 @@
-name: GitHub Actions Demo
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+name: HEAVY!!!
+run-name: ${{ github.actor }} runs HEAVY tests via GitHub Actions 🚀
 on:
   merge_group:
     types: [checks_requested]
