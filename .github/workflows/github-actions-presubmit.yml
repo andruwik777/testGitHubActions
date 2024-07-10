@@ -1,0 +1,12 @@
+name: GitHub Actions Demo
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on:
+  pull_request:
+  merge_group:
+jobs:
+  HEAVY_TEST_JOB:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "BEFORE THE SLEEP"
+      - run: sleep 30
+      - run: echo "After the sleep!"
