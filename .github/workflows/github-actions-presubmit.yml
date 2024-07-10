@@ -1,5 +1,5 @@
 name: HEAVY!!!
-run-name: ${{ github.actor }} runs HEAVY tests via GitHub Actions1 🚀
+run-name: ${{ github.actor }} runs HEAVY tests via GitHub Actions12 🚀
 on:
   merge_group:
 jobs:
