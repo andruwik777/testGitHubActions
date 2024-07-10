@@ -6,4 +6,6 @@ jobs:
   validate-pr:
     runs-on: ubuntu-latest
     steps:
+    - run: echo "BEFORE SLEEP"
+    - run: sleep 15
     - run: echo "Hi from MERGE workflow"
