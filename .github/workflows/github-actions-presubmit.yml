@@ -1,9 +1,11 @@
 name: HEAVY!!!
-run-name: ${{ github.actor }} runs HEAVY tests via GitHub Actions12 🚀
+run-name: ${{ github.actor }} runs HEAVY tests via GitHub Actions123 🚀
 on:
+  pull_request:
   merge_group:
 jobs:
   HEAVY_TEST_JOB:
+    if: ${{ github.event_name == 'merge_group' }}
     runs-on: ubuntu-latest
     steps:
       - run: echo "BEFORE THE SLEEP"
