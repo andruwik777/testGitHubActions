@@ -5,7 +5,7 @@ on:
   merge_group:
 jobs:
   HEAVY_TEST_JOB:
-    if: ${{ github.event_name == 'pull_request' }}
+    if: ${{ github.event_name == 'merge_group' }}
     runs-on: ubuntu-latest
     steps:
       - run: echo "BEFORE THE SLEEP"
