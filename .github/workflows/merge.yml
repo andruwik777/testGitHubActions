@@ -1,0 +1,9 @@
+name: MERGE name
+run-name: MERGE run-name
+on:
+  merge_group:
+jobs:
+  validate-pr:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "Hi from MERGE workflow"
